@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Profile Card</h2>
+    <div class="profile">
+      <p id="time"></p>
+
+      <div class="image">
+        <img src="./alimahh.jpg" alt="" />
+      </div>
+
+      <div class="text">
+        <p data-testid="fullName">Name:Dahunsi Alimot Olajumoke</p>
+        <p data-testid="email">
+          <a href="mailto:dahunsiolajumoke18@gmail.com"
+            >dahunsiolajumoke18@gmail.com</a
+          >
+        </p>
+        <p><strong>Phone no.:08105154901 </strong><span id="number"></span></p>
+        <p data-testid="currentLocation">State of Origin:Osun State</p>
+        <p data-testid="jobTitle">Occupation:NYSC Corp member</p>
+        <p data-testid="shortBio">
+          Bio:I graduated from the department of chemistry,Federal University of
+          Technology Minna, and i am a passionate frontend developer with a
+          strong background in creating user-friendly and responsive web
+          applications. With experience in modern web technologies, I focus on
+          building seamless and visually appealing interfaces. My academic
+          background in chemistry, combined with my technical skills, allows me
+          to approach problem-solving analytically. I am also interested in
+          renewable energy, catalysis, and scientific research, aiming to
+          integrate technology and science in innovative ways.
+        </p>
+      </div>
+    </div>
+    <script>
+      const time = document.getElementById("time");
+      const localTime = new Date();
+      const currentTime = localTime.toLocaleTimeString();
+      time.innerHTML = currentTime;
+      console.log(time);
+    </script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
